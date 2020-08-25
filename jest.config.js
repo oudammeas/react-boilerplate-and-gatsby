@@ -1,11 +1,11 @@
 module.exports = {
   collectCoverageFrom: [
-    'app/**/*.{js,jsx}',
-    '!app/**/*.test.{js,jsx}',
-    '!app/*/RbGenerated*/*.{js,jsx}',
-    '!app/app.js',
-    '!app/global-styles.js',
-    '!app/*/*/Loadable.{js,jsx}',
+    'src/app/**/*.{js,jsx}',
+    '!src/app/**/*.test.{js,jsx}',
+    '!src/app/*/RbGenerated*/*.{js,jsx}',
+    '!src/app/app.js',
+    '!src/app/global-styles.js',
+    '!src/app/*/*/Loadable.{js,jsx}',
   ],
   coverageThreshold: {
     global: {
@@ -15,7 +15,7 @@ module.exports = {
       lines: 98,
     },
   },
-  moduleDirectories: ['node_modules', 'app'],
+  moduleDirectories: ['node_modules', 'src/app'],
   moduleNameMapper: {
     '.*\\.(css|less|styl|scss|sass)$': '<rootDir>/internals/mocks/cssModule.js',
     '.*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
