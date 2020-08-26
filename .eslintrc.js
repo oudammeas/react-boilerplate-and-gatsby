@@ -84,6 +84,9 @@ module.exports = {
       webpack: {
         config: './internals/webpack/webpack.prod.babel.js',
       },
+      node: {
+        moduleDirectory: ['node_modules', 'src']
+      }
     },
   },
 };
