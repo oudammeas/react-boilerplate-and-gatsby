@@ -31,25 +31,31 @@ module.exports = {
     },
     // pathPrefix: "/gatsby-contentful-starter",
     plugins: [
-        "gatsby-transformer-remark",
-        "gatsby-transformer-sharp",
-        "gatsby-plugin-react-helmet",
-        "gatsby-plugin-sharp",
+        `gatsby-transformer-remark`,
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-sharp`,
+        `gatsby-plugin-resolve-src`,
     //   {
     //     resolve: "gatsby-source-contentful",
     //     options: contentfulConfig,
     //   },
-        { 
-        resolve: `gatsby-plugin-create-client-paths`,
-        options: { prefixes: [`/app/*`] },
+        {
+            resolve: `gatsby-plugin-create-client-paths`,
+            options: { prefixes: [`/app/*`] },
         },
-        "gatsby-plugin-resolve-src",
         {
             resolve: 'gatsby-plugin-root-import',
             options: {
-              root: path.join(__dirname, 'src')
+              src: path.join(__dirname, 'src'),
+              components: path.join(__dirname, 'src/app/components'),
+              containers: path.join(__dirname, 'src/app/containers'),
+              images: path.join(__dirname, 'src/app/images'),
+              translations: path.join(__dirname, 'src/app/translations'),
+              tests: path.join(__dirname, 'src/app/tests'),
+              utils: path.join(__dirname, 'src/app/utils')
             }
-          }
+        }
     ],
 };
   

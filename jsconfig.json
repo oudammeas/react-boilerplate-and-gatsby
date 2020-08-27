@@ -1,11 +1,12 @@
-{
-    "compilerOptions": {
-      "baseUrl": "./src",
-      "paths": {
-        "*": [
-          "types/*",
-          "*"
-        ]
-      }
-    },
-  }
+// {
+//     "compilerOptions": {
+//       "baseUrl": "./src",
+//       "paths": {
+//         "*": ["types/*", "*"],
+//         "components/*": ["app/components/*"],
+//         "containers/*": ["app/containers/*"],
+//         "images/*": ["app/images/*"],
+//         "utils/*": ["app/utils/*"],
+//       }
+//     },
+//   }
