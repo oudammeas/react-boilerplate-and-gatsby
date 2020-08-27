@@ -116,7 +116,7 @@ module.exports = options => ({
     }),
   ]),
   resolve: {
-    modules: ['node_modules', 'src'],
+    modules: ['node_modules', 'app'],
     extensions: ['.js', '.jsx', '.react.js'],
     mainFields: ['browser', 'jsnext:main', 'main'],
   },
