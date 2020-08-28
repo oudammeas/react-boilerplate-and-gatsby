@@ -32,7 +32,7 @@ import configureStore from './configureStore';
 // Import i18n messages
 import { translationMessages } from './i18n';
 
-export default function AppMain() {
+export default App;
 
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)
@@ -99,4 +99,3 @@ if (process.env.NODE_ENV === 'production') {
 
 
 
-}
